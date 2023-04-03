@@ -228,7 +228,7 @@ class MainActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                         val prevBudget =it.get("budget").toString().toDouble().roundToInt()
 
-                        val prevBalance =it.get("budget").toString().toDouble().roundToInt()
+                        val prevBalance =it.get("balance").toString().toDouble().roundToInt()
 
                         val cut = budget.toDouble().roundToInt() - prevBudget
                         val newBalance = prevBalance + cut
